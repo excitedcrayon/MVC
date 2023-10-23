@@ -1,2 +1,8 @@
-# mvc-platform
-Building a PHP MVC using dependencies like composer
+# MVC
+
+Composition of a framework
+
+- Routing
+- Encapsulation
+- Database
+- Scalability
