@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Accept loading of actual files and directories
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Rewrite everything to index.php file
+    RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+</IfModule>
